@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:gravity="center_vertical"
+android:orientation="vertical"
+    android:weightSum="1"
+    android:baselineAligned="false">
+    <ImageView
+        android:id="@+id/milkIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@android:dimen/thumbnail_width"
+        android:src="@drawable/milkicon"
+        android:layout_above="@+id/milkdailyIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp" />
+
+    <ImageView
+        android:id="@+id/milkdailyIcon"
+        android:layout_width="165dp"
+        android:layout_height="115dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@android:dimen/thumbnail_width"
+        android:layout_marginStart="29dp"
+        android:layout_weight="0.16"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:src="@drawable/milk_daily"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/mymilkicontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/milkdailyIcon"
+        android:layout_alignTop="@+id/milkdailyIcon"
+        android:layout_alignRight="@+id/milkdailyIcon"
+        android:layout_alignBottom="@+id/milkdailyIcon"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Daily Entries"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/custmanagementIcon"
+        android:layout_width="165dp"
+        android:layout_height="115dp"
+        android:layout_alignBottom="@+id/milkdailyIcon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginLeft="@android:dimen/thumbnail_width"
+        android:layout_weight="0.33"
+        android:src="@drawable/custmanage" />
+
+    <TextView
+        android:id="@+id/myIcustIcontxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/custmanagementIcon"
+        android:layout_alignTop="@+id/custmanagementIcon"
+        android:layout_alignRight="@+id/custmanagementIcon"
+        android:layout_alignBottom="@+id/custmanagementIcon"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Customer Management"
+        android:textColor="#000000" />
+
+
+
+</RelativeLayout>
