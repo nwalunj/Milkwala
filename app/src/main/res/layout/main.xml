@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/milkIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@android:dimen/thumbnail_width"
+            android:src="@drawable/milkicon" />
+
+        <Button
+            android:id="@+id/buttonSignIN"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/milkIcon"
+            android:layout_alignStart="@+id/milkIcon"
+            android:layout_below="@+id/milkIcon"
+            android:layout_marginTop="31dp"
+            android:onClick="signIn"
+            android:text="Sign In" />
+
+        <Button
+            android:id="@+id/buttonSignUP"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSignIN"
+            android:layout_marginTop="32dp"
+            android:text="Sign Up"
+            android:layout_alignEnd="@+id/buttonSignIN"
+            android:layout_alignStart="@+id/buttonSignIN" />
+    </RelativeLayout>
