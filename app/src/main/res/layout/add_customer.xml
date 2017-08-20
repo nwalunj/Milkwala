@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <EditText
+        android:id="@+id/custIdlabel"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cust_id"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/custID"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        tools:layout_editor_absoluteX="164dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_alignEnd="@+id/btnAddCustomer"
+        android:layout_alignBottom="@+id/custIdlabel"
+        android:layout_toEndOf="@+id/custIdlabel" />
+
+    <EditText
+        android:id="@+id/custNameLabel"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/cust_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/custName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Your Name"
+        tools:layout_editor_absoluteX="164dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignBaseline="@+id/custNameLabel"
+        android:layout_alignBottom="@+id/custNameLabel"
+        android:layout_toEndOf="@+id/custNameLabel" />
+
+    <EditText
+        android:id="@+id/custemailLabel"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/cust_email"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/custEmail"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="yourname@gmail.com"
+        tools:layout_editor_absoluteX="164dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="140dp"
+        android:layout_toEndOf="@+id/custemailLabel" />
+
+    <EditText
+        android:id="@+id/custphonenLabel"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:text="@string/cust_phone"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/custphone"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="Phone Number"
+        tools:layout_editor_absoluteX="164dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        android:layout_toEndOf="@+id/custphonenLabel" />
+
+    <EditText
+        android:id="@+id/custAddressLabel"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/cust_add"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/custAddress"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Address"
+        tools:layout_editor_absoluteX="164dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="260dp"
+        android:layout_alignStart="@+id/custphone" />
+
+    <EditText
+        android:id="@+id/custmilkqtyLabel"
+        android:layout_width="143dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/milkqty"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="320dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/custmilkqty"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="2"
+        tools:layout_editor_absoluteX="164dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="320dp"
+        android:layout_alignStart="@+id/custAddress" />
+
+    <Button
+        android:id="@+id/btnAddCustomer"
+        android:layout_width="116dp"
+        android:layout_height="49dp"
+        android:text="Add "
+        android:onClick="addCustomer"
+        tools:layout_editor_absoluteY="348dp"
+        tools:layout_editor_absoluteX="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp" />
+
+    <Button
+        android:id="@+id/btnCancelCustomer"
+        android:layout_width="116dp"
+        android:layout_height="49dp"
+        android:text="Cancel"
+        tools:layout_editor_absoluteX="202dp"
+        tools:layout_editor_absoluteY="348dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/custmilkqtyLabel" />
+
+
+</RelativeLayout>

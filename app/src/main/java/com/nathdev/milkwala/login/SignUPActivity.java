@@ -7,6 +7,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.nathdev.milkwala.R;
+import com.nathdev.milkwala.db.LoginDataBaseAdapter;
+
 public class SignUPActivity extends Activity {
     EditText editTextUserName, editTextPassword, editTextConfirmPassword;
     Button btnCreateAccount;

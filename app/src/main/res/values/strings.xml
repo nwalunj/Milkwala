@@ -1,7 +1,12 @@
 <resources>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="menu_settings">Settings</string>
     <string name="app_name">Milkwala</string>
+    <string name="cust_id">Customer ID</string>
+    <string name="cust_name">Name</string>
+    <string name="cust_email">Email</string>
+    <string name="cust_phone">Phone</string>
+    <string name="cust_add">Address</string>
+    <string name="milkqty">Milk</string>
 
 </resources>
+

@@ -1,4 +1,4 @@
-package com.nathdev.milkwala.login;
+package com.nathdev.milkwala.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-public class DataBaseHelper extends SQLiteOpenHelper {
-    public DataBaseHelper(Context context, String name, CursorFactory factory, int version) {
+public class CustomerDataBaseHelper extends SQLiteOpenHelper {
+    public CustomerDataBaseHelper(Context context, String name, CursorFactory factory, int version) {
         super(context, name, factory, version);
     }
 
@@ -15,7 +15,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     // to create a new one.
     @Override
     public void onCreate(SQLiteDatabase _db) {
-        _db.execSQL(LoginDataBaseAdapter.DATABASE_CREATE);
+        _db.execSQL(CustDataBaseAdapter.DATABASE_CREATE);
 
     }
 

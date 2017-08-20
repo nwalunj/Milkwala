@@ -1,4 +1,4 @@
-package com.nathdev.milkwala.login;
+package com.nathdev.milkwala.db;
 
 import android.content.ContentValues;
 import android.content.Context;

@@ -13,9 +13,9 @@ android:weightSum="1">
     android:layout_height="wrap_content"
     android:layout_marginLeft="@android:dimen/thumbnail_width"
     android:src="@drawable/milkicon"
+    android:layout_marginBottom="22dp"
     android:layout_above="@+id/editTextUserNameToLogin"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="24dp" />
+    android:layout_centerHorizontal="true" />
 <EditText
     android:id="@+id/editTextUserNameToLogin"
     android:layout_width="match_parent"
@@ -23,9 +23,9 @@ android:weightSum="1">
     android:ems="10"
     android:hint="User Name"
     android:layout_above="@+id/editTextPasswordToLogin"
-    android:layout_alignStart="@+id/milkIcon"
     android:layout_marginBottom="17dp"
-    android:layout_alignEnd="@+id/milkIcon">
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true">
 
     <requestFocus />
 </EditText>
